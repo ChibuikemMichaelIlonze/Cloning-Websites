@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Source+Sans+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Source+Sans+Pro:wght@600&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+$black: #0e0e0e;
+$white: #fefefe;
+$blue: #b8c0ff;
+$mint-blue: #90d3de;
+$grey: #1b1e2a;
+$grey-darker: #0f1322;
+$grey-dark: #1a1721;
+$purple: #7e2479;
+$brown: #dabda9;
+$width: 100%;
+$height: 100vh;
+$wk-width: 100em;
+$wk-height: 100em;
+$font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+$text: 1em;
+$large-text: 2.3em;
+$small-text: 0.5em;
+$small-radius: 0.5em;
+$large-radius: 2.3em;
+$radius: 50%;
+$ash: #bdbdbd;
+
+body,
+html {
+  width: 100%;
+  font-family: $font;
+  background-color: $grey-darker;
+
+  overflow-x: hidden;
+}

@@ -1,0 +1,116 @@
+@import "./main.scss";
+#hero {
+  margin: 0 1em;
+  display: flex;
+  flex-direction: column;
+  #top {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0 0 1em 0;
+    background-color: $mint-blue;
+    border-top-left-radius: 2% 5%;
+    border-top-right-radius: 2% 5%;
+    border-bottom-left-radius: 2% 5%;
+    border-bottom-right-radius: 2% 5%;
+    .main {
+      padding: 3em 3em 0 3em;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+
+      text-align: left;
+      width: calc($width * 0.5);
+      p {
+        opacity: 0.3;
+        font-size: calc($small-text * 2.3);
+        font-weight: 600;
+      }
+      h1 {
+        font-size: calc($large-text * 2.1);
+
+        font-weight: 670;
+        img {
+          width: calc($small-radius * 1.6);
+          height: calc($small-radius * 1.6);
+        }
+      }
+      div {
+        width: calc($width * 0.86);
+        display: flex;
+        justify-content: space-between;
+        padding: 1.6em 0 0.2em 0;
+        h3 {
+          font-size: calc($small-text * 2.6);
+          font-weight: 600;
+          display: flex;
+          align-self: center;
+          white-space: nowrap;
+        }
+        img {
+          width: calc($small-radius * 4);
+          height: calc($small-radius * 4);
+        }
+      }
+      hr {
+        height: 3px;
+        background-color: $black;
+        border: none;
+        width: calc($width * 0.86);
+        margin-bottom: 2em;
+      }
+    }
+    aside {
+      width: calc($width * 0.4);
+      display: flex;
+      position: relative;
+      img {
+        // width: auto;
+        // height: calc($height);
+        // object-position: 0em -6em;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        object-position: center;
+        aspect-ratio: 1;
+        //  filter: blur(1px);
+        //  opacity: 1px;
+      }
+    }
+  }
+  #bottom {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-gap: 10px;
+    height: 2em;
+    img{
+      width: 1em;
+      height: 1em;
+    }
+    .div1 {
+      border-radius: 10%;
+    }
+
+    .div2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: $brown;
+      border-top-left-radius: 2% 5%;
+      border-top-right-radius: 2% 5%;
+      border-bottom-left-radius: 2% 5%;
+      border-bottom-right-radius: 2% 5%;
+    }
+    .div3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: $blue;
+      border-top-left-radius: 2% 5%;
+      border-top-right-radius: 2% 5%;
+      border-bottom-left-radius: 2% 5%;
+      border-bottom-right-radius: 2% 5%;
+    }
+  }
+}
